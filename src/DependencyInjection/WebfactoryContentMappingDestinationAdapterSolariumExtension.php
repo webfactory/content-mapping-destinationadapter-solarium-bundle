@@ -18,6 +18,6 @@ class WebfactoryContentMappingDestinationAdapterSolariumExtension extends Extens
     public function load(array $configs, ContainerBuilder $container)
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
-        $loader->load('servcies.xml');
+        $loader->load('services.xml');
     }
 }
