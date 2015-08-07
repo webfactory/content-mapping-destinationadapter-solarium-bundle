@@ -1,0 +1,34 @@
+{
+    "name": "webfactory/content-mapping-destinationadapter-solarium-bundle",
+    "description": "",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "webfactory GmbH",
+            "email": "info@webfactory.de",
+            "homepage": "http://www.webfactory.de",
+            "role": "Developer"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/symfony": "^2.3",
+        "webfactory/content-mapping-destinationadapter-solarium": "dev-master",
+        "nelmio/solarium-bundle": "^2.2"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Webfactory\\ContentMappingDestinationAdapterSolariumBundle\\": "src"
+        }
+    },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "file:///var/www/content-mapping"
+        }
+    ]
+}
