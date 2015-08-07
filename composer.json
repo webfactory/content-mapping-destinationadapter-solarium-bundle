@@ -23,12 +23,5 @@
         "psr-4": {
             "Webfactory\\ContentMappingDestinationAdapterSolariumBundle\\": "src"
         }
-    },
-
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "file:///var/www/content-mapping"
-        }
-    ]
+    }
 }
