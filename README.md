@@ -51,7 +51,7 @@ framework:
 <service class="Webfactory\ContentMapping\Synchronizer">
     <!-- SourceAdapter -->
     <argument type="service">
-        <service class="Webfactory\ContentMapping\Doctrine\GenericDoctrineSourceAdapter">
+        <service class="Webfactory\ContentMapping\SourceAdapter\Doctrine\GenericDoctrineSourceAdapter">
             <!-- Doctrine Repository -->
             <argument type="service">
                 <service class="MyVendor\MyBundle\Entity\MyEntityRepository" factory-service="doctrine.orm.entity_manager" factory-method="getRepository">
