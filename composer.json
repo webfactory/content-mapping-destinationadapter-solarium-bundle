@@ -15,7 +15,7 @@
     "require": {
         "php": ">=5.3.0",
         "symfony/symfony": "^2.3",
-        "webfactory/content-mapping-destinationadapter-solarium": "dev-master",
+        "webfactory/content-mapping-destinationadapter-solarium": "^1.2.0",
         "nelmio/solarium-bundle": "^2.2"
     },
 
