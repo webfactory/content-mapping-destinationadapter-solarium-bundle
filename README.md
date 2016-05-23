@@ -8,7 +8,7 @@ easing your synchronization life via simple configuration, a services and a cons
 
 Install the package via composer:
 
-    composer require webfactory/content-mapping-bundle
+    composer require webfactory/content-mapping-destinationadapter-solarium-bundle
 
 and enable two bundles in your app kernel:
     
@@ -19,7 +19,7 @@ and enable two bundles in your app kernel:
 public function registerBundles()
 {
     // ...
-    $bundles[] = new Webfactory\ContentMappingBundle\WebfactoryContentMappingBundle();
+    $bundles[] = new Webfactory\ContentMappingDestinationAdapterSolariumBundle\WebfactoryContentMappingDestinationAdapterSolariumBundle();
     $bundles[] = new Nelmio\SolariumBundle\NelmioSolariumBundle();
     // ...
 }
