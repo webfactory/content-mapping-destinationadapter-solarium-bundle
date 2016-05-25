@@ -20,9 +20,11 @@
 
         <!-- DestinationAdapter -->
         <service id="contentmapping.destinationadapter.solarium" class="Webfactory\ContentMapping\DestinationAdapter\Solarium\SolariumDestinationAdapter">
+            <factory class="Webfactory\ContentMappingDestinationAdapterSolariumBundle\SolariumDestinationAdapterFactory" method="create" />
             <argument type="service" id="solarium.client"/>
             <argument type="service" id="logger" />
             <argument>%contentmapping.destinationadapter.solarium.batch_size%</argument>
+            <argument>%kernel.debug%</argument>
             <tag name="monolog.logger" channel="contentmapping" />
         </service>
 
