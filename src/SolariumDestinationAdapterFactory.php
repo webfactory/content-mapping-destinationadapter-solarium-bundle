@@ -7,7 +7,7 @@ use Webfactory\ContentMapping\DestinationAdapter\Solarium\SolariumDestinationAda
 
 class SolariumDestinationAdapterFactory
 {
-    public function create(Client $solrClient, LoggerInterface $logger, $batchSize = 20, $debug)
+    public static function create(Client $solrClient, LoggerInterface $logger, $batchSize = 20, $debug)
     {
         if ($debug) {
             $logger->warning(
