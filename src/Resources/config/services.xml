@@ -11,7 +11,7 @@
     <services>
 
         <!-- Console Commands -->
-        <service class="Webfactory\ContentMappingDestinationAdapterSolariumBundle\Command\DeleteFromIndexCommand">
+        <service id="contentmapping.destinationadapter.solarium.delete_from_index_command" class="Webfactory\ContentMappingDestinationAdapterSolariumBundle\Command\DeleteFromIndexCommand">
             <argument type="service" id="solarium.client"/>
             <argument type="service" id="logger"/>
             <tag name="monolog.logger" channel="contentmapping" />
