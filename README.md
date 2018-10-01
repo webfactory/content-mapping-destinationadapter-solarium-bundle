@@ -1,6 +1,6 @@
 # content-mapping-destinationadapter-solarium-bundle #
 
-Symfony2 bundle for [webfactory/content-mapping-destinationadapter-solarium](https://github.com/webfactory/content-mapping-destinationadapter-solarium),
+Symfony bundle for [webfactory/content-mapping-destinationadapter-solarium](https://github.com/webfactory/content-mapping-destinationadapter-solarium),
 easing your synchronization life via simple configuration, a services and a console command.
 
 
