@@ -35,6 +35,14 @@ nelmio_solarium:
     endpoints:
         default:
             dsn: http://localhost:8983/solr/your-core
+
+# for SolariumBundle 3.x (beta)            
+nelmio_solarium:
+    endpoints:
+        default:
+            host: localhost
+            port: 8983
+            core: your-core
 ```
 
 
@@ -94,4 +102,4 @@ This project was started at webfactory GmbH, Bonn.
 - <https://www.webfactory.de>
 - <https://twitter.com/webfactory>
 
-Copyright 2015-2018 webfactory GmbH, Bonn. Code released under [the MIT license](LICENSE).
+Copyright 2015-2019 webfactory GmbH, Bonn. Code released under [the MIT license](LICENSE).
