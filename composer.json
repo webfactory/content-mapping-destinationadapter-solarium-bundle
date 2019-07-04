@@ -13,15 +13,22 @@
     ],
 
     "require": {
+        "nelmio/solarium-bundle": "^2.2|^3.0",
         "php": ">=5.3.0",
-        "symfony/symfony": "^2.3||^3.0",
-        "webfactory/content-mapping-destinationadapter-solarium": "^1.2.0",
-        "nelmio/solarium-bundle": "^2.2|^3.0"
+        "symfony/config": "^2.3|^3.0|^4.0",
+        "symfony/console": "^2.3|^3.0|^4.0",
+        "symfony/dependency-injection": "^2.3|^3.0|^4.0",
+        "symfony/http-kernel": "^2.3|^3.0|^4.0",
+        "webfactory/content-mapping-destinationadapter-solarium": "^1.2.0"
     },
 
     "autoload": {
         "psr-4": {
             "Webfactory\\ContentMappingDestinationAdapterSolariumBundle\\": "src"
         }
+    },
+    
+    "config": {
+        "sort-packages": true
     }
 }
