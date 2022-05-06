@@ -1,10 +1,10 @@
-# content-mapping-destinationadapter-solarium-bundle #
+# content-mapping-destinationadapter-solarium-bundle 
 
 Symfony bundle for [webfactory/content-mapping-destinationadapter-solarium](https://github.com/webfactory/content-mapping-destinationadapter-solarium),
 easing your synchronization life via simple configuration, a services and a console command.
 
 
-## Installation ##
+## Installation 
 
 Install the package via composer:
 
@@ -46,7 +46,7 @@ nelmio_solarium:
 ```
 
 
-## Usage ##
+## Usage 
 
 The bundle provides a service called `contentmapping.destinationadapter.solarium` which you can use to define a
 Synchronizer service inside the [webfactory/content-mapping](https://github.com/webfactory/content-mapping) mini
@@ -95,11 +95,11 @@ As a bonus, this bundle provides you with a console command for deleting data fr
     app/bin content-mapping:solarium:delete-from-index [query=*:*]
 
 
-## Credits, Copyright and License ##
+## Credits, Copyright and License 
 
 This project was started at webfactory GmbH, Bonn.
 
 - <https://www.webfactory.de>
 - <https://twitter.com/webfactory>
 
-Copyright 2015-2019 webfactory GmbH, Bonn. Code released under [the MIT license](LICENSE).
+Copyright 2015-2022 webfactory GmbH, Bonn. Code released under [the MIT license](LICENSE).

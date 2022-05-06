@@ -25,10 +25,6 @@ class DeleteFromIndexCommand extends Command
      */
     private $logger;
 
-    /**
-     * @param Client          $solrClient
-     * @param LoggerInterface $logger
-     */
     public function __construct(Client $solrClient, LoggerInterface $logger)
     {
         parent::__construct();
@@ -36,10 +32,7 @@ class DeleteFromIndexCommand extends Command
         $this->logger = $logger;
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName('content-mapping:solarium:delete-from-index')
              ->setDescription('Delete data from the index');
@@ -51,10 +44,7 @@ class DeleteFromIndexCommand extends Command
         );
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $query = $input->getOption('query') ?: '*:*';
 
@@ -74,5 +64,7 @@ class DeleteFromIndexCommand extends Command
                 'duration' => $result->getQueryTime(),
             )
         );
+
+        return 0;
     }
 }

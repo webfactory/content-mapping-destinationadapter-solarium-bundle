@@ -10,11 +10,6 @@ namespace Webfactory\ContentMappingDestinationAdapterSolariumBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-/**
- * Symfony Bundle class.
- *
- * @final by default.
- */
 final class WebfactoryContentMappingDestinationAdapterSolariumBundle extends Bundle
 {
 }
