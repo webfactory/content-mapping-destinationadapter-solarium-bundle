@@ -19,7 +19,7 @@
         </service>
 
         <!-- DestinationAdapter -->
-        <service id="contentmapping.destinationadapter.solarium" class="Webfactory\ContentMapping\DestinationAdapter\Solarium\SolariumDestinationAdapter">
+        <service id="Webfactory\ContentMapping\DestinationAdapter\Solarium\SolariumDestinationAdapter">
             <factory class="Webfactory\ContentMappingDestinationAdapterSolariumBundle\SolariumDestinationAdapterFactory" method="create" />
             <argument type="service" id="solarium.client"/>
             <argument type="service" id="logger" />
@@ -27,6 +27,7 @@
             <argument>%kernel.debug%</argument>
             <tag name="monolog.logger" channel="contentmapping" />
         </service>
+        <service id="contentmapping.destinationadapter.solarium" alias="Webfactory\ContentMapping\DestinationAdapter\Solarium\SolariumDestinationAdapter" />
 
     </services>
 </container>
