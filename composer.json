@@ -1,7 +1,6 @@
 {
     "name": "webfactory/content-mapping-destinationadapter-solarium-bundle",
     "description": "",
-    "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
         {
@@ -13,14 +12,14 @@
     ],
 
     "require": {
-        "php": "^7.2|8.0.*|8.1.*|8.2.*|8.3.*",
-        "nelmio/solarium-bundle": "^2.2|^3.0|^4.0|^5.0",
+        "php": ">= 8.1",
+        "nelmio/solarium-bundle": "^5.0",
         "psr/log": "^1.0|^2.0|^3.0",
-        "solarium/solarium": "^4.2|^5.0|^6.0",
-        "symfony/config": "^2.3|^3.0|^4.0|^5.0|^6.0|^7.0",
-        "symfony/console": "^2.3|^3.0|^4.0|^5.0|^6.0|^7.0",
-        "symfony/dependency-injection": "^2.3|^3.0|^4.0|^5.0|^6.0|^7.0",
-        "symfony/http-kernel": "^2.3|^3.0|^4.0|^5.0|^6.0|^7.0",
+        "solarium/solarium": "^6.0",
+        "symfony/config": "^6.4|^7.0",
+        "symfony/console": "^6.4|^7.0",
+        "symfony/dependency-injection": "^6.4|^7.0",
+        "symfony/http-kernel": "^6.4|^7.0",
         "webfactory/content-mapping-destinationadapter-solarium": "^1.2.0"
     },
 
