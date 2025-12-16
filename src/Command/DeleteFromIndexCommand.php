@@ -3,6 +3,7 @@
 namespace Webfactory\ContentMappingDestinationAdapterSolariumBundle\Command;
 
 use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 use Solarium\Client;
 use Solarium\QueryType\Update\Result;
 use Symfony\Component\Console\Command\Command;
@@ -15,21 +16,11 @@ use Symfony\Component\Console\Input\InputOption;
  */
 class DeleteFromIndexCommand extends Command
 {
-    /**
-     * @var Client
-     */
-    private $solrClient;
-
-    /**
-     * @var LoggerInterface
-     */
-    private $logger;
-
-    public function __construct(Client $solrClient, LoggerInterface $logger)
-    {
+    public function __construct(
+        private readonly Client $solrClient,
+        private readonly LoggerInterface $logger = new NullLogger()
+    ) {
         parent::__construct();
-        $this->solrClient = $solrClient;
-        $this->logger = $logger;
     }
 
     protected function configure(): void
